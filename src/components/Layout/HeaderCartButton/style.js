@@ -12,7 +12,24 @@ export const Button = styled.button`
     align-items: center;
     border-radius: 25px;
     font-weight: bold;
-
+    animation: bump 300ms ease-out;
+    @keyframes bump {
+     0% {
+      transform: scale(1);
+     }
+     10% {
+       transform: scale(0.9);
+     }
+     30% {
+       transform: scale(1.1);
+     }
+     50% {
+       transform: scale(1.15);
+     }
+     100% {
+       transform: scale(1);
+     }
+    }
     :hover  {
     background-color: #2c0d00;
   }
@@ -33,6 +50,10 @@ background-color: #b94517;
     border-radius: 25px;
     margin-left: 1rem;
     font-weight: bold;
+  :hover, :active{
+    background-color: #92320c;
+
+  }
 `
 export const Span = styled.span`
 ${({icon})=>icon && Icon}
@@ -43,29 +64,9 @@ ${({badge})=>badge && Badge};
   
   
   
-//   .button:hover .badge,
-//   .button:active .badge {
-//     background-color: #92320c;
-//   }
-  
+ 
 //   .bump {
-//     animation: bump 300ms ease-out;
 //   }
   
-//   @keyframes bump {
-//     0% {
-//       transform: scale(1);
-//     }
-//     10% {
-//       transform: scale(0.9);
-//     }
-//     30% {
-//       transform: scale(1.1);
-//     }
-//     50% {
-//       transform: scale(1.15);
-//     }
-//     100% {
-//       transform: scale(1);
-//     }
+//   
 //   }
