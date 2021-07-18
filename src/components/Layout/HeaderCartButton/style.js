@@ -37,12 +37,10 @@ export const Button = styled.button`
     background-color: #2c0d00;
   }
 `
-
 const Icon = css`
 width: 1.35rem;
 height: 1.35rem;
 margin-right: 0.5rem;
-
 `
 const Badge = css`
 background-color: #b94517;
@@ -60,13 +58,4 @@ ${({icon})=>icon && Icon}
 ${({badge})=>badge && Badge};
 
 `
-   
-  
-  
-  
  
-//   .bump {
-//   }
-  
-//   
-//   }
